@@ -192,5 +192,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/perfil" />
 
+    <TextView
+        android:id="@+id/textSaudacao"
+        android:layout_width="255dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Olá Usuario"
+        android:textColor="#848790"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
