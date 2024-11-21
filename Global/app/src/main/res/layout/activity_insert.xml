@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/insercao_dados"
+    tools:context=".Insert">
+
+    <ImageView
+        android:id="@+id/btnHome1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/icon_home" />
+
+    <ImageView
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/icon_sair_" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="348dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Inserir dados"
+        android:textColor="@color/green"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- EditText para Nome Completo -->
+    <EditText
+        android:id="@+id/editNomeCompleto"
+        android:layout_width="390dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/edittext_border"
+        android:fontFamily="@font/poppins_light"
+        android:hint="Nome Completo"
+        android:padding="10dp"
+        android:textColor="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <!-- EditText para Telefone -->
+    <EditText
+        android:id="@+id/editTelefone"
+        android:layout_width="390dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_border"
+        android:fontFamily="@font/poppins_light"
+        android:hint="Telefone"
+        android:padding="10dp"
+        android:textColor="@color/green"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNomeCompleto" />
+
+    <!-- EditText para Localização -->
+    <EditText
+        android:id="@+id/etData"
+        android:layout_width="390dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_border"
+        android:fontFamily="@font/poppins_light"
+        android:hint="Insira os dados"
+        android:padding="10dp"
+        android:textColor="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTelefone" />
+
+    <!-- Botão de Inserir -->
+    <Button
+        android:id="@+id/btnInserir"
+        android:layout_width="240dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/poppins_light"
+        android:text="Inserir"
+        android:textColor="@color/yellow"
+        android:textSize="20sp"
+        app:cornerRadius="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etData" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

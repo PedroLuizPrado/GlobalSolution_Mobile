@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="379dp"
+        android:layout_height="56dp"
+        android:background="@drawable/edittext_background_white"
+        android:fontFamily="@font/poppins_light"
+        android:hint="Insira seu e-mail"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/etSenha"
+        android:layout_width="379dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edittext_background_white"
+        android:fontFamily="@font/poppins_light"
+        android:hint="Insira sua senha"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+    <TextView
+        android:id="@+id/txtEsqueciSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="Esqueceu a senha?"
+        android:textColor="#223B40"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSenha" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="359dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/poppins_light"
+        android:text="Login"
+        android:textColor="@color/yellow"
+        android:textSize="20sp"
+        app:cornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEsqueciSenha" />
+
+    <TextView
+        android:id="@+id/txtCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/poppins_light"
+        android:text="Ainda não tem uma conta? Faça cadastro"
+        android:textColor="#D3CE23"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="172dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Bem vindo de volta!"
+        android:textColor="@color/yellow"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/editar_dados"
+    tools:context=".Edit">
+
+    <!-- AutoCompleteTextView para listar localizações -->
+
+    <!-- EditText para nova localização -->
+
+    <!-- EditText para exibir ou editar a localização -->
+
+    <!-- Campo para nome completo -->
+
+    <!-- Campo para telefone -->
+
+    <!-- Botão para alterar localização -->
+
+    <!-- Botão para salvar dados -->
+
+    <!-- Botão para salvar dados do usuário -->
+
+    <EditText
+        android:id="@+id/editTextNovaLocalizacao"
+        android:layout_width="416dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edittext_background_white"
+        android:hint="Digite uma nova localização"
+        android:padding="12dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/etData"
+        android:layout_width="416dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_background_white"
+        android:hint="Digite a localização"
+        android:padding="12dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNovaLocalizacao" />
+
+    <EditText
+        android:id="@+id/editNomeCompleto"
+        android:layout_width="416dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edittext_background_white"
+        android:hint="Nome Completo"
+        android:padding="12dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etData" />
+
+    <EditText
+        android:id="@+id/editTelefone"
+        android:layout_width="416dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edittext_background_white"
+        android:hint="Telefone"
+        android:inputType="phone"
+        android:padding="12dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNomeCompleto" />
+
+    <Button
+        android:id="@+id/btnAlterar"
+        android:layout_width="193dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/poppins_light"
+        android:text="Alterar Localização"
+        android:textColor="@color/yellow"
+        app:cornerRadius="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTelefone" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="193dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/poppins_light"
+        android:text="Salvar"
+        android:textColor="@color/white"
+        app:cornerRadius="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnHome2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlterar"
+        app:layout_constraintVertical_bias="0.172" />
+
+    <Button
+        android:id="@+id/btnSaveUsuario"
+        android:layout_width="193dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/poppins_light"
+        android:text="Salvar Dados do Usuário"
+        android:textColor="@color/white"
+        app:cornerRadius="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnDeslogar"
+        app:layout_constraintEnd_toStartOf="@+id/btnSave"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlterar"
+        app:layout_constraintVertical_bias="0.173" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="292dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Edite seus dados"
+        android:textColor="@color/yellow"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnDeslogar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/icon_sair_" />
+
+    <ImageView
+        android:id="@+id/btnHome2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/icon_home" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
