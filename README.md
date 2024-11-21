@@ -47,6 +47,10 @@ A proposta do aplicativo é proporcionar mais comodidade e confiança para os us
 
 Se você deseja contribuir para este projeto, sinta-se à vontade para enviar sugestões ou melhorias. Para contribuir, basta fazer um fork do repositório, aplicar as alterações desejadas e abrir um pull request.
 
+## Link do Figma
+
+O design do aplicativo foi criado no [Figma](https://www.figma.com/design/WoYRl2rEqGFfV78lzhicdM/Global-Solution?node-id=1-3&t=dhcPJp7eT46uWb5D-1).
+
 ---
 
 **Por que ter este aplicativo?**
